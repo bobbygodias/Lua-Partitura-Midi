@@ -15,6 +15,22 @@ Lua não trata áudio → MIDI como conversão de formato nem MIDI → partitura
 | **Transcrever música para MIDI** | WAV, FLAC, MP3, M4A, MP4 ou stems | MIDI de performance e MIDI preparado para score | separação, múltiplos candidatos, reconstrução por instrumento, A/B re-sintetizado e auditoria SMF |
 | **Escrever partituras corretamente** | MIDI, MusicXML/MXL, LilyPond, áudio, cifra, tablatura ou instrução | MusicXML, LilyPond, PDF, playback MIDI e partes | validação estrutural, musical, idiomática e gráfica |
 
+## Baixar e instalar
+
+### [⬇️ Baixar as duas Skills em um único ZIP](https://github.com/bobbygodias/Lua-Partitura-Midi/raw/refs/heads/main/dist/Lua-Partitura-Midi-Skills.zip)
+
+O pacote contém as duas pastas completas, um guia de instalação e a licença de domínio público. O checksum está em [`dist/Lua-Partitura-Midi-Skills.zip.sha256`](dist/Lua-Partitura-Midi-Skills.zip.sha256).
+
+No ChatGPT Work com Skills habilitadas, anexe o ZIP a uma conversa normal e peça:
+
+```text
+@skill-creator Instale e valide as duas habilidades contidas neste arquivo.
+```
+
+No Codex, descompacte as duas pastas em `$HOME/.agents/skills/` para uso pessoal ou em `.agents/skills/` na raiz de um repositório para uso somente naquele projeto.
+
+Veja o passo a passo completo, incluindo outras plataformas compatíveis com Agent Skills, em **[INSTALACAO.md](INSTALACAO.md)**. A estrutura e a ativação de Skills no ChatGPT e Codex também estão descritas na [documentação oficial da OpenAI](https://learn.chatgpt.com/docs/build-skills).
+
 ## Princípio central
 
 Uma rede neural produz evidência candidata. A entrega final exige reconciliação musical e testes. O projeto nunca considera uma saída automática “correta” apenas porque um programa conseguiu abri-la.
@@ -33,6 +49,9 @@ skills/
     references/
 tests/
   test_auditors.py
+dist/
+  Lua-Partitura-Midi-Skills.zip
+  Lua-Partitura-Midi-Skills.zip.sha256
 ```
 
 ## Auditores portáteis
