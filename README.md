@@ -1,5 +1,11 @@
 # Lua — Partitura e MIDI
 
+<p align="center">
+  <img src="assets/lua-banner.png"
+       alt="Lua apresentando interfaces de partitura, piano roll, velocity e arquivo MIDI em um cenário cósmico"
+       width="100%">
+</p>
+
 Projeto aberto para transformar música gravada em representação simbólica útil e produzir partituras musicalmente corretas, legíveis e verificáveis.
 
 Lua não trata áudio → MIDI como conversão de formato nem MIDI → partitura como importação automática. O projeto divide o problema em duas habilidades independentes e encadeáveis:
