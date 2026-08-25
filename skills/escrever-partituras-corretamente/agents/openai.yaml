@@ -1,0 +1,14 @@
+interface:
+  display_name: Lua — Partitura Correta
+  short_description: Partituras rigorosas, legíveis e musicalmente válidas
+  default_prompt: Use $escrever-partituras-corretamente para produzir e revisar uma
+    partitura formalmente correta deste material musical.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
